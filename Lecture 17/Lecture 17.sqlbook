@@ -99,6 +99,12 @@ Try it yourself!
 -- Select a new driver id (needs to be unique)
 -- Make sure to deparate arguments by a semicolon!
 
+INSERT INTO drivers VALUES (5, 'Leslie Flores', 'Salvadoran' , 105);
+INSERT INTO drivers VALUES (6, 'Neha Murthy', 'Indian' , 14);
+
+
+
+
 
 
 -- SQLBook: Markup
@@ -131,7 +137,7 @@ WHERE nationality = 'German';
 
 -- Evalute OR conditions
 SELECT * FROM drivers
-WHERE (nationality = 'United States') OR (nationality = 'Indian');
+WHERE (nationality = 'Salvadoran') OR (nationality = 'Indian');
 
 -- Evaluate AND conditions
 SELECT * FROM drivers
@@ -187,6 +193,9 @@ with more than 60 victories
 -- SQLBook: Code
 -- Write your own code!
 
+SELECT nationality, driver_id FROM drivers
+WHERE victories > 60; 
+
 
 
 -- SQLBook: Markup
@@ -215,6 +224,7 @@ Subsetting **after** aggregating
 -- HAVING is the command you use to subset *after* aggregating
 -- This differs from WHERE which is use to subset *before* aggregating
 
+-- Group the data by nationalities and then keep the total sum of the victories greater than 50 
 SELECT nationality,
        SUM(victories) AS sum_victories,
        AVG(victories) AS mean_victories,
