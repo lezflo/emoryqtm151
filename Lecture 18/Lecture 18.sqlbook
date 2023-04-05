@@ -90,7 +90,7 @@ Try it yourself!
 DROP TABLE IF EXISTS bills_subjects; 
 
 CREATE TABLE bills_subjects(
-        "Congress"      int NOT NULL,
+        "congress"      int NOT NULL,
         bill_number     int,
         bill_type       varchar(30),
         bill_subject    varchar(30)
@@ -135,13 +135,9 @@ WITH (DELIMITER ',', FORMAT csv, HEADER MATCH);
 -----  names and should be ignored when importing.
 
 
-
-COPY us_congress_members
-FROM '/private/tmp/data/us_congress_members.csv'
-WITH (DELIMITER ',', FORMAT csv, HEADER MATCH);
-
-
--- SQLBook: Code
+/* \COPY us_congress_members 
+FROM '/Users/leslieflores/Documents/GitHub/emoryqtm151/Lecture 18/data/us_congress_members.csv' 
+WITH (DELIMITER',',FORMAT csv, HEADER MATCH); */
 
 -- SQLBook: Markup
 
@@ -175,9 +171,8 @@ SELECT * FROM us_congress_members
 -- Note in the instructor's computer this is:
 -- You just have to change the FROM argument
 --
-COPY us_congress_members
-FROM 'D:\GitHub\qtm151spring2023\Lecture 18\data\us_congress_members.csv'
-WITH (DELIMITER ',', FORMAT csv, HEADER MATCH);
+
+SELECT * FROM us_congress_members
 
 
 

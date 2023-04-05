@@ -1,5 +1,5 @@
 -- SQLBook: Markup
-# <span style="color:darkblue"> Lecture 19 - Practicing SQL queries </span>
+# <span style="color:pink"> Lecture 19 - Practicing SQL queries </span>
 
 <font size = "5">
 
@@ -8,7 +8,7 @@ called "SQL queries"
 
 - There will be a quiz on this lecture
 -- SQLBook: Markup
-# <span style="color:darkblue"> I. Review of SQL commands </span>
+# <span style="color:pink"> I. Review of SQL commands </span>
 
 -- SQLBook: Markup
 <font size = "5">
@@ -61,7 +61,7 @@ Import data
 --       WITH (DELIMITER ',', FORMAT csv, HEADER MATCH);
 
 -- SQLBook: Markup
-## <span style="color:darkblue"> III. Quiz Structure </span>
+## <span style="color:pink"> III. Quiz Structure </span>
 
 <font size = "5">
 
